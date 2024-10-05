@@ -1,6 +1,7 @@
 import AddEmployee from '../pages/AdminAddEmployee/AdminAddEmployee'
 import AdminLandingPageRT from '../pages/AdminLandingPage/AdminLandingPage'
 import EmployeeSectionRT from '../pages/EmployeeSection/EmployeeSection'
+import EmployeeDetailsRT from '../pages/EmployeeDetails/EmployeeDetails'
 import DepartmentSectionRT from '../pages/DepartmentSection/DepartmentSection'
 import AddDepartment from '../pages/AdminAddDepartment/AdminAddDepartment'
 import LeaveTypeRT from '../pages/LeaveTypeSection/LeaveTypeSection'
@@ -23,6 +24,10 @@ const AddEmployeeRoute  =  {
    path: "/admin/employee-section",
    element:  <EmployeeSectionRT/>
   }
+  const EmployeeDetailsRoute  =  {
+    path: "/admin/employee-details",
+    element:  <EmployeeDetailsRT/>
+   }
   const DepartmentSectionRoute  =  {
    path: "/admin/department-section",
    element:  <DepartmentSectionRT/>
@@ -65,6 +70,6 @@ const AddEmployeeRoute  =  {
     element:  <LeaveDetailsRT/>
    }
 
-export {AddEmployeeRoute, AdminLandingPageRoute, EmployeeSectionRoute, DepartmentSectionRoute, AddDepartmentRoute,LeaveTypeRoute,AddLeaveTypeRoute, ManageLeaveTypeRoute,ApprovedLeaveTypeRoute,DeclinedLeaveTypeRoute,LeaveHistoryRoute,LeaveDetailsRoute};
+export {AddEmployeeRoute, AdminLandingPageRoute, EmployeeSectionRoute, DepartmentSectionRoute, AddDepartmentRoute,LeaveTypeRoute,AddLeaveTypeRoute, ManageLeaveTypeRoute,ApprovedLeaveTypeRoute,DeclinedLeaveTypeRoute,LeaveHistoryRoute,LeaveDetailsRoute, EmployeeDetailsRoute};
 
   

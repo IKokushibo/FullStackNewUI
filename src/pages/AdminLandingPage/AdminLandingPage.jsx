@@ -143,38 +143,38 @@ function Dashboard() {
             <h1 className="text-3xl font-bold mb-8">Welcome, {user['first-name']}!</h1>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div onClick={() => navigate("/admin/leave-type")} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-blue-400 text-white p-8 rounded-lg shadow-lg flex items-center justify-center">
               <div className="text-center">
                 <h2 className="text-5xl font-bold">{leaveTypes.length}</h2>
                 <p className="mt-2 text-lg">Leave Types</p>
               </div>
             </div>
-            <div className="bg-blue-400 text-white p-8 rounded-lg shadow-lg flex items-center justify-center">
+            <div onClick={() => navigate("/admin/employee-section")} className="bg-blue-400 text-white p-8 rounded-lg shadow-lg flex items-center justify-center">
               <div className="text-center">
                 <h2 className="text-5xl font-bold">{registeredEmployees.length}</h2>
                 <p className="mt-2 text-lg">Registered Employees</p>
               </div>
             </div>
-            <div className="bg-blue-400 text-white p-8 rounded-lg shadow-lg flex items-center justify-center">
+            <div onClick={() => navigate("/admin/department-section")} className="bg-blue-400 text-white p-8 rounded-lg shadow-lg flex items-center justify-center">
               <div className="text-center">
                 <h2 className="text-5xl font-bold">{availableDepartments.length}</h2>
                 <p className="mt-2 text-lg">Available Departments</p>
               </div>
             </div>
-            <div className="bg-blue-400 text-white p-8 rounded-lg shadow-lg flex items-center justify-center">
+            <div onClick={() => navigate("/admin/pending-leave-type")} className="bg-blue-400 text-white p-8 rounded-lg shadow-lg flex items-center justify-center">
               <div className="text-center">
                 <h2 className="text-5xl font-bold">{pendingLeaveLength}</h2>
                 <p className="mt-2 text-lg">Pending Applications</p>
               </div>
             </div>
-            <div className="bg-blue-400 text-white p-8 rounded-lg shadow-lg flex items-center justify-center">
+            <div onClick={() => navigate("/admin/declined-leave-type")} className="bg-blue-400 text-white p-8 rounded-lg shadow-lg flex items-center justify-center">
               <div className="text-center">
                 <h2 className="text-5xl font-bold">{disapprovedLeaveLength}</h2>
                 <p className="mt-2 text-lg">Declined Applications</p>
               </div>
             </div>
-            <div className="bg-blue-400 text-white p-8 rounded-lg shadow-lg flex items-center justify-center">
+            <div onClick={() => navigate("/admin/approved-leave-type")} className="bg-blue-400 text-white p-8 rounded-lg shadow-lg flex items-center justify-center">
               <div className="text-center">
                 <h2 className="text-5xl font-bold">{approvedLeaveLength}</h2>
                 <p className="mt-2 text-lg">Approved Applications</p>

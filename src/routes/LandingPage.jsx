@@ -4,6 +4,7 @@ import LeaveHistoryRT from "../pages/EmployeeLeaveHistory/EmployeeLeaveHistory"
 import LeaveCreditsRT from "../pages/EmployeeLeaveCredits/EmployeeLeaveCredits"
 import ChangePassword from "../pages/ChangePassword/ChangePassword"
 
+
 const LandingPageRoute = {
   path: "/employee/landing-page",
   element: <LandingPage />

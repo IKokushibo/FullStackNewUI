@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import Sidebar from '../../Components/Sidebar';
-
 import axios from "../../services/AxiosConfiguration"
 import { useNavigate } from 'react-router-dom';
 import Information from '../../Components/Information_Modal/Infomation';
@@ -61,7 +60,7 @@ function AddNewDepartment() {
 
           <div className="bg-white p-8 shadow-lg rounded-md">
             <h2 className="text-2xl font-bold mb-6">Add New Department</h2>
-            <p className="mb-6">Please fill out the form below to add a new department.</p>
+            <p className="mb-6">Please Fill Out the Form Below to Add a New Department.</p>
 
             <form className="space-y-4">
               <div>

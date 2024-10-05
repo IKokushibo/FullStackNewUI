@@ -32,7 +32,7 @@ function EmployeeSection() {
   const [userLeaves, setUserLeaves] = useState(0);
   const [userLeaveOldCredit, setUserLeaveOldCredit] = useState("");
   const [userId, setUserId] = useState(0);
-  const [credit, setCredit] = useState(0);
+  const [note, setNote] = useState("");
 
   const [message, setMessage] = useState("");
 
@@ -229,7 +229,7 @@ function EmployeeSection() {
               >
                 Add New Employee
               </button>
-              <input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} type="text" placeholder="Search employee here" className="border p-4 h-10" />
+              <input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} type="text" placeholder="Search Employee Here" className="border p-4 h-10" />
             </div>
 
             <div className="overflow-x-auto">
@@ -276,8 +276,9 @@ function EmployeeSection() {
                               onClick={() => handleEdit(element)}
                               className="bg-yellow-500 text-white font-bold py-1 px-3 rounded-md hover:bg-yellow-700"
                             >
-                              Edit
+                              Edit Boss
                             </button>
+                            
                             <button
                               onClick={() => handleRemove(element["user-id"])}
                               className="bg-red-500 text-white font-bold py-1 px-3 rounded-md hover:bg-red-700"
@@ -358,7 +359,7 @@ function EmployeeSection() {
             <div className="space-y-6">
               <div>
                 <select className="border w-full p-2 rounded" onChange={(e) => setUserLeaveId(e.target.value)}>
-                  <option value="">Select user leave</option>
+                  <option value="">Select User Leave</option>
                   {Array.isArray(userLeaves) && userLeaves.map((element, index) => (
                     <option key={index} value={element.id}>{element['type-of-leave']['leave-type']}</option>
                   ))}
@@ -366,11 +367,11 @@ function EmployeeSection() {
               </div>
               <div>
                 <label>Current credit</label>
-                <input value={userLeaveOldCredit.toString()} disabled type="text" className="border w-full p-2 rounded" />
+                <input value={userLeaveOldCredit.toString()} type="number" className="border w-full p-2 rounded" />
               </div>
               <div>
-                <label>Input a new credit</label>
-                <input value={credit} onChange={(e) => setCredit(e.target.value)} type="text" className="border w-full p-2 rounded" />
+                <label>Note:</label>
+                <input value={note} onChange={(e) => setNote(e.target.value)} type="text" placeholder="Set Note Here" className="border w-full p-2 rounded" />
               </div>
               <div className="flex justify-end space-x-4 mt-6">
                 <button
