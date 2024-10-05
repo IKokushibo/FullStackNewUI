@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Ensure full height for html and body */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: auto; /* Allow scroll for the entire page */
+      }
+
+      /* Ensure #root takes up the full height */
+      #root {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Optional: Ensure that the content inside doesn't scroll unnecessarily */
+      .content {
+        flex-grow: 1;
+        overflow-y: auto; /* Ensures scrolling for content if needed */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="content">
+        <!-- Your application content goes here -->
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
