@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { LoginRoute, LoginAdminRoute } from "./routes/LoginRoute";
 import { LandingPageRoute, ApplyLeaveRoute, EmployeeLeaveHistoryRoute, EmployeeLeaveCreditsRoute, ChangePasswordRoute } from './routes/LandingPage';
 
-import { AddEmployeeRoute, AdminLandingPageRoute, EmployeeSectionRoute, DepartmentSectionRoute, AddDepartmentRoute, LeaveTypeRoute, AddLeaveTypeRoute, ManageLeaveTypeRoute, DeclinedLeaveTypeRoute, ApprovedLeaveTypeRoute, LeaveHistoryRoute, LeaveDetailsRoute, EmployeeDetailsRoute } from './routes/AdminPage';
+import { AddEmployeeRoute, AdminLandingPageRoute, EmployeeSectionRoute, DepartmentSectionRoute, AddDepartmentRoute, LeaveTypeRoute, AddLeaveTypeRoute, ManageLeaveTypeRoute, DeclinedLeaveTypeRoute, ApprovedLeaveTypeRoute, LeaveHistoryRoute, LeaveDetailsRoute, EmployeeDetailsRoute,LeaveHistoryPageRoute} from './routes/AdminPage';
 
 
 const routers = createBrowserRouter([
@@ -26,7 +26,8 @@ const routers = createBrowserRouter([
   EmployeeLeaveHistoryRoute,
   EmployeeLeaveCreditsRoute,
   ChangePasswordRoute,
-  EmployeeDetailsRoute
+  EmployeeDetailsRoute,
+  LeaveHistoryPageRoute,
 ]);
 
 export default function App() {

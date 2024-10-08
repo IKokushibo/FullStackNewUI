@@ -11,6 +11,9 @@ import ApprovedLeaveTypeRT from '../pages/ApprovedLeaveSection/ApprovedLeaveSect
 import DeclinedLeaveTypeRT from '../pages/DeclinedLeaveSection/DeclinedLeaveSection'
 import LeaveHistoryRT from '../pages/LeaveHistoryPage/LeaveHistoryPage'
 import LeaveDetailsRT from '../pages/AdminLeaveDetails/AdminLeaveDetails'
+import EmployeeLeaveHistoryRT from '../pages/EmployeeLeaveHistoryPage/EmployeeLeaveHistoryPage'
+
+
 
 const AddEmployeeRoute  =  {
    path: "/admin/add-employee",
@@ -64,12 +67,15 @@ const AddEmployeeRoute  =  {
     path: "/admin/leave-history",
     element:  <LeaveHistoryRT/>
    }
-
+   const LeaveHistoryPageRoute  =  {
+    path: "/admin/leave-history-page",
+    element:  <EmployeeLeaveHistoryRT/>
+   }
    const LeaveDetailsRoute  =  {
     path: "/admin/leave-details/:id",
     element:  <LeaveDetailsRT/>
    }
 
-export {AddEmployeeRoute, AdminLandingPageRoute, EmployeeSectionRoute, DepartmentSectionRoute, AddDepartmentRoute,LeaveTypeRoute,AddLeaveTypeRoute, ManageLeaveTypeRoute,ApprovedLeaveTypeRoute,DeclinedLeaveTypeRoute,LeaveHistoryRoute,LeaveDetailsRoute, EmployeeDetailsRoute};
+export {AddEmployeeRoute, AdminLandingPageRoute, EmployeeSectionRoute, DepartmentSectionRoute, AddDepartmentRoute,LeaveTypeRoute,AddLeaveTypeRoute, ManageLeaveTypeRoute,ApprovedLeaveTypeRoute,DeclinedLeaveTypeRoute,LeaveHistoryRoute,LeaveDetailsRoute, EmployeeDetailsRoute,LeaveHistoryPageRoute};
 
   

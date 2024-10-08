@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
-import SideBard from '../../Components/Sidebar'
+import SideBard from '../../Components/Sidebar';
 import { useNavigate } from 'react-router-dom';
 
-import axios from "../../services/AxiosConfiguration"
+import axios from "../../services/AxiosConfiguration";
 
 // utils
 import { isAdminValidForAccessing } from '../../services/UserUtils';
@@ -143,8 +143,8 @@ function Dashboard() {
             <h1 className="text-3xl font-bold mb-8">Welcome, {user['first-name']}!</h1>
           </div>
 
-          <div onClick={() => navigate("/admin/leave-type")} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-blue-400 text-white p-8 rounded-lg shadow-lg flex items-center justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div onClick={() => navigate("/admin/leave-type")} className="bg-blue-400 text-white p-8 rounded-lg shadow-lg flex items-center justify-center">
               <div className="text-center">
                 <h2 className="text-5xl font-bold">{leaveTypes.length}</h2>
                 <p className="mt-2 text-lg">Leave Types</p>
@@ -189,7 +189,6 @@ function Dashboard() {
       </div>
     </>
   );
-
 }
 
 export default Dashboard;
